@@ -18,18 +18,10 @@ public class JsonResource {
 	@Produces("application/json")
 	public String handleGreeting() {
 		StringBuffer retorno = new StringBuffer("");
-		
-//		Flight flight = new Flight();
-//		flight.setFrom("JPA");
-//		flight.setTo("SAO");
-//		flight.setDtDep("01/10/2017");
-//		flight.setDtRet("10/11/2017");
-//		flight.setPrice(12345.67f);
 
-		Gson gson = new Gson();
-		JsonStreamParser parser = null;
 		try {
-			parser = new JsonStreamParser(new FileReader(FILENAME));
+			JsonStreamParser parser = new JsonStreamParser(new FileReader(FILENAME));
+			Gson gson = new Gson();
 			while (parser.hasNext()) {
 				String json = gson.toJson(parser.next());
 				retorno.append(json);
