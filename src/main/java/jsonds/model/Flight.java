@@ -5,7 +5,9 @@ public class Flight {
 	private String to;
 	private String dtDep;
 	private String dtRet;
-	private double price;
+	private int adult;
+	private int child;
+	private double alertPrice;
 
 	public String getFrom() {
 		return from;
@@ -39,17 +41,33 @@ public class Flight {
 		this.dtRet = dtRet;
 	}
 
-	public double getPrice() {
-		return price;
+	public int getAdult() {
+		return adult;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
+	public void setAdult(int adult) {
+		this.adult = adult;
+	}
+
+	public int getChild() {
+		return child;
+	}
+
+	public void setChild(int child) {
+		this.child = child;
+	}
+
+	public double getAlertPrice() {
+		return alertPrice;
+	}
+
+	public void setAlertPrice(double alertPrice) {
+		this.alertPrice = alertPrice;
 	}
 
 	@Override
 	public String toString() {
 		return "De: " + getFrom() + ", Para: " + getTo() + ", Partida: " + getDtDep() + ", Retorno: " + getDtRet()
-				+ ", Preço: " + getPrice();
+				+ ", Adultos: " + getAdult() + ", Criancas: " + getChild() + ", Preço: " + getAlertPrice();
 	}
 }
