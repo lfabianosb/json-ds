@@ -1,2 +1,1 @@
-[{"from":"JPA","to":"SAO","dtDep":"01/10/2017","dtRet":"10/11/2017","price":12345.67},
-{"from":"JPA","to":"VIX","dtDep":"01/12/2017","dtRet":"10/12/2017","price":45.67}]
+[{"from":"JPA","to":"CCC","dtDep":"01/12/2017","dtRet":"10/12/2017","price":45.67}]

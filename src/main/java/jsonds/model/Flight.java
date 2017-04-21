@@ -5,7 +5,7 @@ public class Flight {
 	private String to;
 	private String dtDep;
 	private String dtRet;
-	private float price;
+	private double price;
 
 	public String getFrom() {
 		return from;
@@ -39,11 +39,11 @@ public class Flight {
 		this.dtRet = dtRet;
 	}
 
-	public float getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
